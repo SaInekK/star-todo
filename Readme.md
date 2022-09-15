@@ -1,16 +1,26 @@
-# Django & Postgres With Docker Starter Project
+# Star-Todo 
 
-This project is created for a youtube tutorial. If you are here because of that video, welcome! You can also use this project as starter for your own projects.
+### Проект представляет собой API вокруг четырех сущностей
+- Пользователи
+- Доски - у пользователя может быть несколько 
+- Стикеры - на доске может быть несколько 
+- Todo-item'ы - у стикера может быть несколько
 
-## Requirements
-- docker
-- docker-compose
+с применением Django, Django-REST-Framework, Postgres, Docker.
 
-## Setup
-First you need to rename .env.sample file to .env.
 
-## Setup on Development
-```docker-compose up --build```
+Реализована регистрация и авторизация через djoser
 
-## Setup on Production
-```docker-compose -f docker-compose.prod.yml up --build```
+API Base URL: ```host:8000/api/v1```
+
+Swagger : ```host:8000/swagger```
+
+## Запуск development-сервера с docker-compose
+- Переименовать файл ```.env-template``` в ```.env``` и заполнить (обновить) необходимые поля
+- ```docker-compose up --build```
+
+
+## TODO:
+- Запретить создавать и изменять родительские объекты стикеров и todo-item'ов на не созданные юзером (permissions)
+- Добавить пагинацию
+- Найти ошибки

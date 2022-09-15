@@ -236,3 +236,7 @@ yarn-error.log*
 /fittoeco_project/media
 /media
 /image
+
+/app/static
+/app/staticfiles
+/app/media
