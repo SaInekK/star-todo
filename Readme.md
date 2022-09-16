@@ -9,7 +9,7 @@
 с применением Django, Django-REST-Framework, Postgres, Docker.
 
 
-Реализована регистрация и авторизация через djoser
+Реализована регистрация и аутентификация через djoser
 
 API Base URL: ```host:8000/api/v1```
 
